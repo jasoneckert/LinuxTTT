@@ -5,7 +5,7 @@ During this TTT, we’ll be installing two (2) different Linux distributions. Fo
 1. On your Windows or macOS computer, download the ISO image for Fedora Workstation for your architectures (x86/ARM) from https://www.fedoraproject.org/.
 2. Install a free hypervisor on your Windows or macOS system. 
    - For macOS on the Apple Silicon (ARM) platform, you can use [UTM](https://mac.getutm.app/), [Oracle VirtualBox](https://www.virtualbox.org/), or [VMWare Fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion). 
-   - For macOS on the x86 platform, you can use Oracle Virtualbox (https://www.virtualbox.org/) or [VMWare Fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion).
+   - For macOS on the x86 platform, you can use [Oracle Virtualbox](https://www.virtualbox.org/) or [VMWare Fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion).
    - For Windows on the x86 or Snapdragon (ARM) platform, you can use Oracle Virtualbox (https://www.virtualbox.org/), [VMWare Workstation](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion), or the native Hyper-V (if you have Pro edition or greater). 
    - Refer to the free documentation on the hypervisor website to learn how to create a virtual machine using the hypervisor software.
 3. In your virtualization software, create a new virtual machine (VM) called Fedora Workstation. This VM should have:
