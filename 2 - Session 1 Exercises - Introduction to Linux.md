@@ -15,6 +15,7 @@
    12. Type `exit` within each of your screens to kill each bash shell, returning you to your original bash shell.
    13. Run the following commands to install the KDE Plasma Workspaces desktop environment:
        - `dnf install @kde-desktop-environment -y`
+       - `dnf upgrade --refresh -y`
        - `reboot`
    14. After your system has rebooted, choose the Settings (cog wheel icon) menu in the gdm and select Plasma. 
    15. Complete your login as the user woot.
