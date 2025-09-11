@@ -34,7 +34,7 @@
    - `less bigfile` (type `h` for help, `q` to quit)
    - `cat letter`
    - `tail -8 letter`
-   - ` strings letter`
+   - `strings letter`
    - `od -x letter`
    - `cat /etc/hosts`
    - `cat Poems/Yeats/mooncat`
@@ -44,19 +44,19 @@
 
 # Common Text Tools
    * Open a Terminal on your Fedora Workstation virtual machine as root
-   - ` cd classfiles`
-   - ` grep "I " letter` 
-   - ` grep -v "I " letter`
-   - ` grep -i love Poems/Shakespeare/*` (note the number of lines returned)
-   - ` wc -l Poems/Shakespeare/*` (was Shakespeare a romantic?) 
+   - `cd classfiles`
+   - `grep "I " letter` 
+   - `grep -v "I " letter`
+   - `grep -i love Poems/Shakespeare/*` (note the number of lines returned)
+   - `wc -l Poems/Shakespeare/*` (was Shakespeare a romantic?) 
 
 # Editing Text Files
    * Open a Terminal on your Fedora Workstation virtual machine as root
-   - ` nano letter` (note the legend with `[Ctrl]` key combinations)
-   - ` dnf install vim` (installs the full version of vi improved)
-   - ` vimtutor` (interactive vi tutorial, alternatively visit https://vim.is/#exercise)
-   - ` vi small_town` (fix the numerous typos and formatting errors, saving your changes when finished)
-   - ` vi ~/.vimrc` (add the line `set number` to turn on line numbering on by default)
+   - `nano letter` (note the legend with `[Ctrl]` key combinations)
+   - `dnf install vim` (installs the full version of vi improved)
+   - `vimtutor` (interactive vi tutorial, alternatively visit https://vim.is/#exercise)
+   - `vi small_town` (fix the numerous typos and formatting errors, saving your changes when finished)
+   - `vi ~/.vimrc` (add the line `set number` to turn on line numbering on by default)
 
 # Managing Files & Directories
    * Open a Terminal on your Fedora Workstation virtual machine as root
