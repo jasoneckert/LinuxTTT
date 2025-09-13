@@ -8,11 +8,11 @@
    - The virtual machine DVD drive attached to the ISO image of Ubuntu Server
 3. Start your Ubuntu Server virtual machine. 
 4. At the Welcome screen, GNU GRUB screen, ensure that ***Try or Install Ubuntu Server*** is selected and press Enter.
-5. At the Welcome screen, ensure that English is selected and press Enter.
+5. At the Welcome screen, ensure that ***English*** is selected and press Enter.
 6. If you are presented with an ***Installer update available screen***, ensure that ***Continue with updating*** is selected and press Enter.
 7. At the Keyboard configuration screen, select ***English (US)*** and select ***Done***. 
 8. At the Choose the type of installation screen, ensure that ***Ubuntu Server*** is checked and select ***Done***.
-7. At the Network connections screen, ensure that your network interface is set to DHCP and select ***Done***.
+7. At the Network connections screen, ensure that your network interface is set to ***DHCP*** and select ***Done***.
 8. At the Configure proxy screen, select ***Done***.
 9. At the Configure Ubuntu archive mirror screen, select ***Done*** after the tests are passed.
 10. At the Guided storage configuration screen, ensure that ***Use an entire disk*** and ***Set up this disk as an LVM group*** are selected and select ***Done***.
