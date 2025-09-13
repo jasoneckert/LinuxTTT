@@ -1,6 +1,6 @@
 # Installing Ubuntu Server 
 
-1. On your Windows or macOS computer, download the ISO image for Ubuntu Server for your architecture (x86/ARM) from https://ubuntu.com/download/server.
+1. On your Windows or macOS computer, download the ISO image for Ubuntu Server LTS for your architecture (x86/ARM) from https://ubuntu.com/download/server.
 2. In your virtualization software, create a new virtual machine (VM) called Ubuntu Server. This VM should have:
    - 2GB of memory (not dynamically allocated)
    - A network connection via the network interface in your computer that provides Internet access – using an external virtual switch (Hyper-V) or bridged mode (VMWare, Oracle VirtualBox, UTM)
