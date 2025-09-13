@@ -2,7 +2,7 @@
 
 During this TTT, we’ll be installing two (2) different Linux distributions. For the first part of this TTT, we’ll use the latest Fedora Workstation distribution. 
 
-1. On your Windows or macOS computer, download the ISO image for Fedora Workstation for your architectures (x86/ARM) from https://www.fedoraproject.org/.
+1. On your Windows or macOS computer, download the ISO image for Fedora Workstation for your architecture (x86/ARM) from https://www.fedoraproject.org/.
 2. Install a free hypervisor on your Windows or macOS system. 
    - For macOS on the Apple Silicon (ARM) platform, you can use [UTM](https://mac.getutm.app/), [Oracle VirtualBox](https://www.virtualbox.org/), or [VMWare Fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion). 
    - For macOS on the x86 platform, you can use [Oracle Virtualbox](https://www.virtualbox.org/) or [VMWare Fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion).
