@@ -11,7 +11,7 @@
 3. Start your Ubuntu Server virtual machine. 
 4. At the Welcome screen, GNU GRUB screen, ensure that ***Try or Install Ubuntu Server*** is selected and press Enter.
 5. At the Welcome screen, ensure that ***English*** is selected and press Enter.
-6. If you are presented with an ***Installer update available screen***, ensure that ***Continue with updating*** is selected and press Enter.
+6. If you are presented with an ***Installer update available screen***, ensure that ***Continue without updating*** is selected and press Enter.
 7. At the Keyboard configuration screen, select ***English (US)*** and select ***Done***. 
 8. At the Choose the type of installation screen, ensure that ***Ubuntu Server*** is checked and select ***Done***.
 7. At the Network configuration screen, ensure that your network interface is set to ***DHCP*** and select ***Done***.
