@@ -1,4 +1,6 @@
-# Installing Ubuntu Server 
+# Installing Ubuntu Server
+
+## Note that this is a command line installer program - you must use your Tab key to navigate options, Spacebar to add checks to boxes, and Enter to select options.
 
 1. On your Windows or macOS computer, download the ISO image for Ubuntu Server LTS for your architecture (x86/ARM) from https://ubuntu.com/download/server.
 2. In your virtualization software, create a new virtual machine (VM) called Ubuntu Server. This VM should have:
@@ -12,8 +14,8 @@
 6. If you are presented with an ***Installer update available screen***, ensure that ***Continue with updating*** is selected and press Enter.
 7. At the Keyboard configuration screen, select ***English (US)*** and select ***Done***. 
 8. At the Choose the type of installation screen, ensure that ***Ubuntu Server*** is checked and select ***Done***.
-7. At the Network connections screen, ensure that your network interface is set to ***DHCP*** and select ***Done***.
-8. At the Configure proxy screen, select ***Done***.
+7. At the Network configuration screen, ensure that your network interface is set to ***DHCP*** and select ***Done***.
+8. At the Proxy configuration screen, select ***Done***.
 9. At the Configure Ubuntu archive mirror screen, select ***Done*** after the tests are passed.
 10. At the Guided storage configuration screen, ensure that ***Use an entire disk*** and ***Set up this disk as an LVM group*** are selected and select ***Done***.
 11. At the Storage configuration screen, note that the root filesystem (ubuntu-lv) does not fill the entire disk. Select ***ubuntu-lv***, choose ***Edit***, enter the maximum size into the Size dialog box, and select ***Save***. Review your configuration, select ***Done***, and then ***Continue***.
