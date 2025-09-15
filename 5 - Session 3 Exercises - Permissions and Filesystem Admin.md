@@ -79,7 +79,7 @@
    - `ll /dev/sda*` (note the block file type, major number and minor numbers)
    - `ll /dev/tty[0-6]` (note the character file type, major number and minor numbers)
    * In the settings for your virtual machine, insert your Fedora ISO image into the virtual DVD drive. 
-   * In the GNOME desktop, navigate to Activities > Files and note that your DVD is shown as mounted. 
+   * In the GNOME desktop, navigate to the Files app and note that your DVD is shown as mounted. 
    - `df -hT` (note the standard partitions are mounted to /, /home and /boot, and DVD automounted to /run/media/woot/label) 
    - `lsblk` (note that zswap is mounted as SWAP) 
    - `ls /sys/block` 
