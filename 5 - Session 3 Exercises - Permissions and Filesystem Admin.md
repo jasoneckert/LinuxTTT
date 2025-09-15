@@ -92,7 +92,7 @@
       - `p` 
       - `n`
       - `[Enter]` (for next available partition number)
-      - If MBR disk, choose `p` for primary partition, otherwise this will not be displayed
+      - - If MBR disk, you'll need to choose `p` for primary partition!
       - `[Enter]` (for first available sector)
       - `[Enter]` (for last available sector)
       - `p`
