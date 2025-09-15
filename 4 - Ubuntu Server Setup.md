@@ -28,5 +28,6 @@
 14. At the SSH setup, select ***Install OpenSSH server*** with your spacebar and select ***Done***.
 13. At the Featured Server Snaps screen, select ***Done***.
 14. At the Install complete screen, select ***Reboot Now***. When prompted to remove your installation medium, press Enter.
-15. After the system has booted, log in as ***woot***, type `sudo passwd root` and set the root user password to `Secret555`. 
-16. Type `poweroff` to shut down your Ubuntu Server virtual machine.
+15. After the system has booted, log in as ***woot***, type `sudo passwd root` and set the root user password to `Secret555`.
+16. Run `ip addr` and note your IP address. If you prefer to use a Terminal app to connect to this Ubuntu Server in the future, you could run the `ssh woot@IPaddress` command from your Fedora Workstation Terminal app, the Windows Terminal app, or the macOS Terminal app to obtain a remote shell on the Ubuntu Server using SSH. Once connected to this remote shell, you can run the `su -` command as usual to switch to the root user.
+17. Type `poweroff` to shut down your Ubuntu Server virtual machine.
