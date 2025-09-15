@@ -84,7 +84,7 @@
    - `lsblk` (note that zswap is mounted as SWAP) 
    - `ls /sys/block` 
    - `ls /run/media/woot/label`
-   - `umount /run/media/woot/label` (replace `label` with the actual label usign Tab completion) 
+   - `umount /run/media/woot/label` (replace `label` with the actual label using Tab completion) 
    - `df -hT` (verify that the virtual DVD is no longer mounted)
    - `mount /dev/cdrom /mnt` (/dev/cdrom is a symlink to your CD/DVD device file)
    - `ls /mnt` (note the DVD contents)
