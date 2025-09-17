@@ -40,7 +40,6 @@
    - `echo $VAR1`
    - `vi ~/.bashrc` (add the following lines, save and quit)
      - `export VAR1="Hello World"`
-     - `alias bye="echo Goodbye ; sleep 5 ; exit"`
      - `alias c=clear`
      - `alias bye="echo Goodbye ; sleep 5 ; exit"`
    - `source ~/.bashrc` (so you don't need to open a new shell)
