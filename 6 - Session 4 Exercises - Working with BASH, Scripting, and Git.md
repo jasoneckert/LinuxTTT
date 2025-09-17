@@ -44,6 +44,7 @@
      - `alias bye="echo Goodbye ; sleep 5 ; exit"`
    - `source ~/.bashrc` (so you don't need to open a new shell)
    - `c`
+   - `bye`
 
 # Shell Scripts (note that the `tar` command is discussed later)
    * Open a Terminal on your Fedora Workstation virtual machine as root
