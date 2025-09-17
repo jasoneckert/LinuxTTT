@@ -10,7 +10,7 @@
    - `cp /etc/hosts .`
    - `cat hosts`
    - `sort hosts >hosts`
-   - `cat hosts` (the file is empty because the shell clears an existing file before writing stdout to it with the `>` symbol - you should use `>>` to append output or redirect the sorted output to a different file)
+   - `cat hosts` (the file is empty because the shell clears an existing file before writing stdout to it with the `>` symbol - use `>>` instead to append sorted output to the file, or redirect the sorted output to a different file)
    - `tr a A <letter >newletter`
    - `cat newletter`
    - `ls <letter` (`ls` runs normally because it does not accept stdin)
