@@ -40,7 +40,8 @@
    - `cat Poems/Yeats/mooncat`
    - `cat Poems/Shakespeare/* | less` 	
    - `cat Poems/Blake/tiger`
-   - `head -1 Poems/Blake/tiger`
+   - `head -1 Poems/Blake/tiger` 
+   - `tac Poems/Blake/tiger' (permits the ability to read files from bottom up instead of top down like cat)
 
 # Common Text Tools
    * Open a Terminal on your Fedora Workstation virtual machine as root
