@@ -1,0 +1,115 @@
+# Processes 
+   * Open a Terminal on your Fedora Workstation virtual machine as root
+   - `ps -ef | less` (view the processes on your system)
+   - `ps -el | grep Z` (do you have any zombie processes on your system?)
+   - `pstree` (scroll your terminal to navigate the output)
+   - `top` (press `q` to quit when finished)
+   - `dnf install htop btop atop -y`
+   - `htop` (press `q` to quit when finished)
+   - `btop` (press `q` to quit when finished)
+   - `atop` (press `q` to quit when finished)
+   - `ps` (note the PID of your bash shell for the following commands)
+   - `kill -2 PID` (note that bash trapped the signal)
+   - `kill -3 PID` (note that bash trapped the signal)
+   - `kill -15 PID` (note that bash trapped the signal)
+   - `kill -9 PID` (note that the process was killed successfully - log back in as root afterwards)
+   - `sleep 10` (note that you do not receive your prompt until sleep terminates)
+   - `sleep 5000000& ; sleep 5000000& ; sleep 5000000&`
+   - `jobs`
+   - `fg %3`    
+   - `[Ctrl]+c` (this sends a 2/SIGINT kill signal to the foreground process)
+   - `killall -9 sleep`
+   - `ps -l` (note the priority and nice values)
+   - `nice -n 19 ps -l` (note the priority and nice values)
+   - `nice -n -20 ps -l` (note the priority and nice values)
+   - `nice -n 11 sleep 50000&` (note the PID for the next command)
+   - `renice -5 PID`
+   - `exec ls` (you were logged out after this command was run because you directed your shell to not fork() a subshell - log back in as root afterwards)
+   - `at now + 1 minute` 
+      - `echo Hello World >>/testfile`
+      - `Press [Ctrl]+d`
+   - `cat /testfile` (to this in about 1 minute to see the results)
+   - `dnf install cronie -y` (in case you didn't do this during the Session 1 lab exercise)
+   - `crontab -e` (save your changes when finished - use https://crontab.guru/ to interpret when /bin/false is scheduled to run!)
+      - `15  6   1-6  *  2  /bin/false`
+      - `20  21  1-6  *  2  /bin/false`
+   - `crontab -l` 
+   - `ls -F /proc/1` (this is the PID for the first daemon on the system, Systemd)
+   - `cat /proc/cpuinfo`
+   - `cat /proc/meminfo`
+   - `cat /proc/uptime`
+   - `cat /proc/sys/net/ipv4/ip_forward` 
+   
+   # Kernel Modules
+   * Open a Terminal on your Fedora Workstation virtual machine as root
+   - `dnf install lshw -y`
+   - `lshw -class network` (note the driver used)
+   - `lsmod | less` (note that your driver is listed)
+   - `modprobe dummy` (dummy is a fake network card driver used for testing only) 
+   - `lsmod | grep dummy` (note that your driver is listed)
+   - `modinfo dummy`
+   - `rmmod dummy`
+   - `less /etc/modprobe.d/*` (note any manually-loaded modules)
+   
+   # Users & Groups
+   * Open a Terminal on your Fedora Workstation virtual machine as root
+   - `less /etc/login.defs`
+   - `cat /etc/default/useradd`
+   - `touch /etc/skel/policies.txt`
+   - `useradd -m larry` 
+   - `useradd -m curly` 
+   - `useradd -m moe` 
+   - `passwd larry` (enter Secret555)
+   - `passwd curly`(enter Secret555)
+   - `passwd moe` (enter Secret555)
+   - `groupadd stooges`
+   - `usermod -aG stooges larry curly moe`
+   - `grep larry /etc/passwd` (interpret the fields shown)
+   - `grep larry /etc/shadow` (interpret the fields shown)
+   - `grep stooges /etc/group` (interpret the fields shown) 
+   - `passwd -l larry`
+   - `grep larry /etc/shadow`
+   - `passwd -u larry`
+   - `grep larry /etc/shadow`
+   - `chfn larry` (supply some suitable values of your choice)
+   - `grep larry /etc/passwd`
+   - `finger larry`
+   - `ls -a /etc/skel` 
+   - `ls -a /home/larry` (note the contents are the same as /etc/skel and include policies.txt)
+   - `su - woot`
+   - `groups` (note that you are a member of the wheel group)
+   - `sudo userdel larry` (supply your password of Secret555 when prompted to confirm)
+   - `su -`	(supply the root user password of Secret555 when prompted)
+   - `ll -a /home/larry` (note that larry’s old UID owns existing files)
+   - `useradd -m -u UID shemp` (where UID is larry’s old UID)
+   - `passwd shemp` (enter Secret555)
+   - `ll -a /home/larry /home/shemp` (note that shemp owns larry’s old files)
+   - `id` (note your UID & GID and that root is your primary group)
+   - `touch firstnewfile`
+   - `ll firstnewfile` (note the owner of root, and group owner of root)
+   - `newgrp sys`  
+   - `id`	(note your UID & GID and that sys is your primary group)
+   - `touch secondnewfile`
+   - `ll secondnewfile` (note the owner of root, and group owner of sys) 
+
+# Logs
+   * Open a Terminal on your Fedora Workstation virtual machine as root
+   - `ls /var/log`
+   - `less /etc/logrotate.conf`
+   - `ls /etc/logrotate.d`
+   - `less /etc/logrotate.d/*`
+   - `who /var/log/wtmp`
+   - `>/var/log/wtmp` (recall that the shell clears an existing file before redirecting output to it!)
+   - `who /var/log/wtmp`
+   - `journalctl _COMM=su`
+   - `journalctl _COMM=gdm --since “08:00”`
+   - `journalctl --unit=crond.service --since “08:00”`
+   - `journalctl --since “08:00” | grep -i bluetooth`
+   - `journalctl -b`
+   - `journalctl -k`
+   - `dmesg | less`
+   - `less /etc/rsyslog.conf`
+   - `less /var/log/secure`
+   - `less /var/log/messages`
+   - `less /var/log/boot.log` 
+   - `less /var/log/cron` 
