@@ -107,6 +107,7 @@
    - `journalctl --since “08:00” | grep -i bluetooth`
    - `journalctl -b`
    - `journalctl -k`
+   - `less /usr/lib/systemd/journald.conf` (this is often /etc/systemd/journald.conf on other distros)
    - `dmesg | less`
    - `less /etc/rsyslog.conf`
    - `less /var/log/secure`
