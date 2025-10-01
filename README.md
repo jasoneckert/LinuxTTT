@@ -17,3 +17,12 @@ Linux+ Voucher is good for 1 year (must be CIN Member, CompTIA Partner Affilated
 8. [Session 8] (10/2/2025): https://event.on24.com/wcc/r/5041699/D827822BAC4657FCF691239BA1E2C052
 9. [Session 9] (10/7/2025): https://event.on24.com/wcc/r/5041702/DFE65B8123AA83EF0EBA92CC220C7A09
 10. [Session 10] (10/9/2025): https://event.on24.com/wcc/r/5041703/7B51848BA27303842491B4E8A9482179
+
+## Two Different Linux Distributions
+- [x] **Red Hat Package Manager (Rocky Linux)**
+- [x] **.RPM (Red Hat Enterprise Linux)**
+- [x] **.RPM (Oracle Linux)** 
+- [x] **Debian Package Manager (Ubuntu)**
+- [x] **Debian Package Manager (Debian)**
+- [ ]  **.DEB (Kali Linux)**
+- [ ]  **.DEB (Parrot OS)**
