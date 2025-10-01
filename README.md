@@ -1,4 +1,5 @@
-## CompTIA Linux+ Train the Trainer Series Sessions from CompTIA Linux+ Instructor (2 Hours Per Session)
+## CompTIA Linux+ Train the Trainer Series Sessions from CompTIA Linux+ Instructor 
+## 2 Hours Per Session
 **Jason Eckert**
 
 (Requires Registered CIN Business Email) - Access is available for 3 years
