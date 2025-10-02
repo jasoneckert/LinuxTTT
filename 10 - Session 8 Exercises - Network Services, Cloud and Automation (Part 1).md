@@ -124,7 +124,7 @@
 # DHCP
   * Open a Terminal on your Fedora Workstation virtual machine as root
   - `dnf install dhcpd -y` 
-  - `vi /etc/dhcp/dhcpd.conf` (provide an IPv4 configuration for your network using the syntax at https://docs.fedoraproject.org/en-US/Fedora/14/html/Deployment_Guide/s1-dhcp-configuring-server.html)
+  - `vi /etc/dhcp/dhcpd.conf` (provide an IPv4 configuration for your network using the syntax shown in the slide deck for Session 8)
   - `systemctl start dhcpd.service` 
   - `ps –ef | grep dhcpd` (if dhcpd is not present, you made a typo in dhcpd.conf)
   - `firewall-cmd --add-service dhcp` 
