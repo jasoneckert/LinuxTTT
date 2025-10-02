@@ -145,7 +145,7 @@
   - `firewall-cmd --add-service ntp --permanent` 
   - `chronyc sources -v` (note the NTP servers queried for time) 
   * Open a Terminal on your Ubuntu Server virtual machine as root
-  - `apt install ntp -y`
+  - `apt install ntp -y` (if you get a conflict with systemd-timesyncd, run `apt remove systemd-timesyncd` first)
   - `vi /etc/ntpsec/ntp.conf` (add this line before other pool entries: `pool FedoraIP iburst`)
   - `systemctl restart ntp.service`
   - `ntpq -p` (note your Fedora time server listed in addition to the others) 
