@@ -100,7 +100,7 @@
 
 # DNS
   * Open a Terminal on your Fedora Workstation virtual machine as root
-  - `dnf install bind`
+  - `dnf install bind -y`
   - `curl https://triosdevelopers.com/jason.eckert/trios/example.com.dns --output /var/named/example.com.dns` 	
   - `cat /var/named/example.com.dns` 
   - `chmod 644 /var/named/example.com.dns` 
@@ -145,14 +145,14 @@
   - `firewall-cmd --add-service ntp --permanent` 
   - `chronyc sources -v` (note the NTP servers queried for time) 
   * Open a Terminal on your Ubuntu Server virtual machine as root
-  - `apt install ntp`
+  - `apt install ntp -y`
   - `vi /etc/ntpsec/ntp.conf` (add this line before other pool entries: `pool FedoraIP iburst`)
   - `systemctl restart ntp.service`
   - `ntpq -p` (note your Fedora time server listed in addition to the others) 
 
 # Docker Containers
   * Open a Terminal on your Ubuntu Server virtual machine as root
-  - `apt install docker.io` 
+  - `apt install docker.io -y` 
   - `docker search busybox`
   - `docker pull busybox` (pulls the official busybox Linux container image from Docker Hub)
   - `docker images` (you can remove a downloaded image using `docker rmi imagename`)
