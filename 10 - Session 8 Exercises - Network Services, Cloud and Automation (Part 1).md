@@ -82,7 +82,7 @@
   - `chgrp www-data /var/www/html/index.html` (refresh the webpage in your Web browser and note the webpage displays properly because the Apache daemon has read permission to the web content) 
   - `ab -n 1000 -c 100 http://localhost/ `
   - `apt install nginx -y`
-  - `grep sites-enabled /etc/nginx/nginx/conf` (note that on Ubuntu, the Nginx configuration refers to files under the /etc/nginx/sites-enabled/ directory)
+  - `grep sites-enabled /etc/nginx/nginx.conf` (note that on Ubuntu, the Nginx configuration refers to files under the /etc/nginx/sites-enabled/ directory)
   - `vi /etc/nginx/sites-enabled/default` (note the same document root of `/var/www/html`, then change `listen 80` to `listen 81` and `listen [::] :80` to `listen [::] :81` and save your changes)
   - `nginx -t` (if you made a syntax error, it will be displayed here)
   - `systemctl restart nginx.service`
