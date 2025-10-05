@@ -104,7 +104,7 @@
   - `curl https://raw.githubusercontent.com/jasoneckert/LinuxTTT/refs/heads/main/files/example.com.dns --output /var/named/example.com.dns` 	
   - `cat /var/named/example.com.dns` 
   - `chmod 644 /var/named/example.com.dns` 
-  - `curl https://triosdevelopers.com/jason.eckert/trios/named.conf.additions --output named.conf.additions` 
+  - `curl https://raw.githubusercontent.com/jasoneckert/LinuxTTT/refs/heads/main/files/named.conf.additions --output named.conf.additions` 
   - `vi /etc/named.conf`
      * Go to the end of the file and type `:r named.conf.additions` 
      * Ensure that the last line (the `forwarders` option for 8.8.8.8) is added to the options block near the top of the file (remove the word `options` when adding it to this block), and then comment this last line 
