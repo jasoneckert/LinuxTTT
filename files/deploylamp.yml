@@ -1,0 +1,36 @@
+---
+- name: Deploy LAMP on Ubuntu hosts
+  hosts: ubuntu
+  become: yes
+  become_method: sudo
+
+  pre_tasks:
+  - name: Update apt repository cache, if necessary
+    apt: update_cache=yes cache_valid_time=3600
+
+  handlers:
+  - name: restart apache
+    service: name=apache2 state=restarted
+  
+  tasks:
+  - name: Install LAMP packages
+    apt:
+      state: present
+      name:
+      - apache2
+      - mariadb-server
+      - mariadb-client
+      - php
+
+  - name: Disable the firewall
+    service: name=ufw state=stopped
+
+  - name: Start Apache and MariaDB
+    service: "name={{ item }} state=started enabled=yes"
+    with_items:
+    - apache2
+    - mariadb
+
+  - name: Enable Apache userdir module for home directory hosting
+    apache2_module: name=userdir state=present
+    notify: restart apache

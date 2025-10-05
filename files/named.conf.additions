@@ -1,0 +1,12 @@
+#Add the following in the /etc/named.conf file to refer to your zone file:
+
+zone "example.com" IN {
+	type master;
+	file "example.com.dns";
+	allow-update { none; };
+};
+
+
+#Also add the default forwarder option in /etc/named.conf:
+
+options forwarders { 8.8.8.8; };
