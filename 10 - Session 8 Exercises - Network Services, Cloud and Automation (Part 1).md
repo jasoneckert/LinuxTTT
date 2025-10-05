@@ -101,7 +101,7 @@
 # DNS
   * Open a Terminal on your Fedora Workstation virtual machine as root
   - `dnf install bind -y`
-  - `curl https://triosdevelopers.com/jason.eckert/trios/example.com.dns --output /var/named/example.com.dns` 	
+  - `curl https://raw.githubusercontent.com/jasoneckert/LinuxTTT/refs/heads/main/files/example.com.dns --output /var/named/example.com.dns` 	
   - `cat /var/named/example.com.dns` 
   - `chmod 644 /var/named/example.com.dns` 
   - `curl https://triosdevelopers.com/jason.eckert/trios/named.conf.additions --output named.conf.additions` 
