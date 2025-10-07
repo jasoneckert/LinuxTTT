@@ -16,7 +16,7 @@
   - `kubectl top nodes` (note that K3s comes with a metrics service that collects statistics - these can be used to perform Horizontal Pod Autoscaling (HPA))
   - `kubectl autoscale deployment webapp --min=3 --max=8 --cpu-percent=50` (create HPA configuration for your Web app that automatically scales from 3 to 8 pods when a consistent trend of more than 50% of the CPU is consumed)
   - `kubectl get hpa webapp` 
-  - `kubectl set image deployment/webapp webapp=jasoneckert/webapp` (Kubernetes will immediately start replacing the pods with your new image in sequence until all of them are upgraded - if an upgraded image causes issues, you can revert to the previous image, which you'll need to do since jasoneckert/webapp was compiled for ARM64!)
+  - `kubectl set image deployment/webapp x86webapp=jasoneckert/webapp` (Kubernetes will immediately start replacing the pods with your new image in sequence until all of them are upgraded - if an upgraded image causes issues, you can revert to the previous image, which you'll need to do since jasoneckert/webapp was compiled for ARM64!)
   - `kubectl get pod` (note that the first container used during the replacement has a CrashLoopBackOff or Error state indicating a serious issue)
   - `kubectl rollout undo deployment webapp` 
   - `kubectl get pod` (note it was rolled back successfully)
