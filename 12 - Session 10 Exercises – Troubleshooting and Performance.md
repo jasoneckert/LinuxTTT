@@ -1,8 +1,8 @@
 # Troubleshooting
    * Open a Terminal on your Fedora Workstation virtual machine as root
    - `grep -i bluetooth /var/log/messages` 
-   - `journalctl --since "08:00" | grep -i bluetooth` (Is the output the same? Experiment pasting some of these events into Google/AI)
-   - `journalctl -xe --unit bluetooth` (note the output is more readable, scroll right to read long lines)
+   - `journalctl --since -4hours | grep -i bluetooth` (Is the output the same? Experiment pasting some of these events into Google/AI)
+   - `journalctl --since -4hours -xe --unit bluetooth` (note the output is more readable, scroll right to read long lines)
    - `top` (press Shift+`M` to sort by memory to detect memory leaks, Shift+`P` to sort by CPU to detect rogues)
    - `systemd-analyze blame`
    - `df -i` (is the inode table near its limit for the root filesystem?)
@@ -18,6 +18,7 @@
    - `firewall-cmd --list-all`
    - `firewall-cmd --add-service http`
    - `firewall-cmd --add-service http --permanent` (in a web browser on your host OS, navigate to `http://FedoraWorkstationIP`)
+   - In Firefox on your Fedora Workstation, navigate to `https://localhost:9090`, log in as woot and enable Administrative access (supplying your `sudo` password when prompted. Enable and explore the metrics available, as well as the log navigation capabilities.
 
 # Performance
    * Open a Terminal on your Fedora Workstation virtual machine as root
