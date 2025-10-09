@@ -4,7 +4,9 @@
    - `journalctl --since -4hours | grep -i bluetooth` (Is the output the same? Experiment pasting some of these events into Google/AI)
    - `journalctl --since -4hours -xe --unit bluetooth` (note the output is more readable, scroll right to read long lines)
    - `top` (press Shift+`M` to sort by memory to detect memory leaks, Shift+`P` to sort by CPU to detect rogues)
-   - `systemd-analyze blame`
+   - `systemd-analyze blame` (slow boot?)
+   - `ll` (permission/ownership issues?)
+   - `lsattr` (immutable/append-only attribute set?)
    - `df -i` (is the inode table near its limit for the root filesystem?)
    - `quota -u woot` (is the inode table near its limit for the root filesystem?)
    - `umount /private ; fsck -f /dev/mapper/private ; mount /private`
