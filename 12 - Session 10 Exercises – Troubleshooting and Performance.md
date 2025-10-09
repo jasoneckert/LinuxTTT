@@ -38,7 +38,8 @@
    - `systemctl enable sysstat-summary.timer --now`
    - `systemctl start sysstat-rotate.service`
    - `systemctl enable sysstat-rotate.timer --now`
-   - `mpstat 2 5`
+   - `mpstat 2 5` (five measurements, 2 seconds apart)
+   - `mpstat 2 5 -P 0` (processor core 0)
    - `pidstat`
    - `iostat`
    - `vmstat`
