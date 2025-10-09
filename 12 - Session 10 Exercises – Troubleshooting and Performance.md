@@ -21,6 +21,7 @@
    - `firewall-cmd --list-all`
    - `firewall-cmd --add-service http`
    - `firewall-cmd --add-service http --permanent` (in a web browser on your host OS, navigate to `http://FedoraWorkstationIP`)
+   - `audit2why < /var/log/audit/audit.log`
    - In Firefox on your Fedora Workstation, navigate to `https://localhost:9090`, log in as woot and enable Administrative access (supplying your `sudo` password when prompted. Enable and explore the metrics available, as well as the log navigation capabilities.
 
 # Performance
