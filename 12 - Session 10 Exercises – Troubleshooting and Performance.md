@@ -6,6 +6,7 @@
    - `top` (press Shift+`M` to sort by memory to detect memory leaks, Shift+`P` to sort by CPU to detect rogues)
    - `systemd-analyze blame`
    - `df -i` (is the inode table near its limit for the root filesystem?)
+   - `quota -u woot` (is the inode table near its limit for the root filesystem?)
    - `umount /private ; fsck -f /dev/mapper/private ; mount /private`
    - `ping -c 4 localhost`
    - `ping -c 4 gateway` (where gateway is your default gateway)
