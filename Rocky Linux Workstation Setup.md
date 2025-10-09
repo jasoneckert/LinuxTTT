@@ -1,6 +1,6 @@
-# Installing Fedora Workstation & Obtaining Sample Files
+# Installing Rocky Linux & Obtaining Sample Files
 
-During this TTT, we’ll be installing two (2) different Linux distributions. For the first part of this TTT, we’ll use the latest Rocky Linux Enterprise Linux distribution. 
+During this TTT, we’ll be installing two (2) different Linux distributions. For the first part of this TTT, we’ll use the latest Rocky Linux distribution. 
 
 1. On your Windows or macOS computer, download the ISO image for Rocky Linux Workstation for your architecture (x86/ARM) from https://rockylinux.org/
 2. Install a native installation of Rocky Linux on bare metal. This will save you the headaches of running and configuring a virtual machine and is a more realistic experience.
