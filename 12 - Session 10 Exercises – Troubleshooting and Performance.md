@@ -14,6 +14,9 @@
    - `ping -c 4 gateway` (where gateway is your default gateway)
    - `ping -c 4 8.8.8.8`
    - `ping -c 4 -4 dns.google`
+   - `nslookup dns.google`
+   - `mtr -4 dns.google` (`q` to quit)
+   - `iftop` (`q` to quit)
    - `ps -ef | grep httpd` (is httpd started?)
    - `systemctl status httpd.service` 
    - `systemctl enable httpd.service --now` (this starts it now as well as enables it at boot time)
