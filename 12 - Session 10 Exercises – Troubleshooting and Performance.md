@@ -14,8 +14,9 @@
    - `ping -c 4 gateway` (where gateway is your default gateway)
    - `ping -c 4 8.8.8.8`
    - `ping -c 4 -4 dns.google`
-   - `systemctl start httpd.service`
-   - `ps -ef | grep httpd`
+   - `ps -ef | grep httpd` (is httpd started?)
+   - `systemctl status httpd.service` 
+   - `systemctl enable httpd.service --now` (this starts it now as well as enables it at boot time)
    - `nmap -sT localhost` 
    - `curl http://localhost`
    - `firewall-cmd --list-all`
@@ -27,7 +28,7 @@
 # Performance
    * Open a Terminal on your Fedora Workstation virtual machine as root
    - `dnf install sysstat iotop ioping`
-   - `systemctl enable sysstat.service --now` (this starts it now as well as enables it at boot time)
+   - `systemctl enable sysstat.service --now` 
    - `systemctl start sysstat-collect.service`
    - `systemctl enable sysstat-collect.timer --now`
    - `systemctl start sysstat-summary.service`
