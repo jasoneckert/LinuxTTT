@@ -1,0 +1,26 @@
+$ORIGIN example.com.
+$TTL 86400
+@	SOA	dns1.example.com.	hostmaster.example.com. (
+		2001062501 ; serial
+		21600      ; refresh after 6 hours
+		3600       ; retry after 1 hour
+		604800     ; expire after 1 week
+		86400 )    ; minimum TTL of 1 day
+;
+;
+	NS	dns1.example.com.
+dns1	A	10.3.101.104
+;
+;
+@	MX	10	mail.example.com.
+mail	A	10.3.101.104
+;
+;
+; This sample zone file illustrates sharing the same IP addresses for multiple services:
+;
+server1	A	10.3.101.104
+
+ftp	CNAME	server1.example.com.
+www	CNAME	server1.example.com.
+;
+;
